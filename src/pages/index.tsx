@@ -8,11 +8,7 @@ declare var window: any;
 
 export default function Home() {
   const [account, setAccount] = useState("");
-  const [state, setState] = useState({
-    provider: null,
-    signer: null,
-    contract: null,
-  });
+  const [state, setState] = useState({});
 
   useEffect(() => {
     connectWallet()
